@@ -95,8 +95,8 @@ This project represents the practical milestone for **Week 2** of the Networkwal
   - **Resolved Target IP:** `192.232.216.135`
 - **Security Context:** Resolving the domain to an explicit IP address enables direct IP-targeted port scanning and bypasses certain domain-level routing controls.
 - **Evidence:**
-  ![Task 3 - nslookup](screenshots/task3_nslookup.png)
-- **Raw Log File:** [📄 View nslookup_output.txt](outputs/whatweb_output.txt)
+  ![Task 3 - nslookup](screenshots/nslookup.png)
+- **Raw Log File:** [📄 View nslookup.txt](outputs/nslookup.txt)
 - 
 ---
 
@@ -111,8 +111,8 @@ This project represents the practical milestone for **Week 2** of the Networkwal
   - **Caching Architecture:** Endurance / Nginx caching layers present
 - **Security Context:** Exposing the WordPress REST API endpoint (`/wp-json/`) allows attackers to enumerate active usernames and system metadata.
 - **Evidence:**
-  ![Task 4 - curl](screenshots/task4_curl.png)
-- **Raw Log File:** [📄 View curl_output.txt](outputs/curl_output.txt)
+  ![Task 4 - curl](screenshots/curl-l.png)
+- **Raw Log File:** [📄 View curl_output.txt](outputs/curl-l.txt)
 
 ---
 
@@ -125,8 +125,8 @@ This project represents the practical milestone for **Week 2** of the Networkwal
   - **WAF Detected:** `ModSecurity (SpiderLabs) WAF`
 - **Security Context:** While ModSecurity protects against baseline automated injection attacks, identifying the exact engine informs an adversary which payload evasion techniques to deploy.
 - **Evidence:**
-  ![Task 5 - wafw00f](screenshots/task5_wafw00f.png)
-- **Raw Log File:** [📄 View wafw00f_output.txt](outputs/wafw00f_output.txt)
+  ![Task 5 - wafw00f](screenshots/wafw00f.png)
+- **Raw Log File:** [📄 View wafw00f.txt](outputs/wafw00f.txt)
 ---
 
 ### Task 6: DNS Record Enumeration (`dnsrecon`)
@@ -141,8 +141,8 @@ This project represents the practical milestone for **Week 2** of the Networkwal
   - **BIND Software Version:** `Bind Version 9.16.23-RH`
 - **Security Context:** Leaking BIND daemon version information allows attackers to target version-specific vulnerabilities in DNS daemons.
 - **Evidence:**
-  ![Task 6 - dnsrecon](screenshots/task6_dnsrecon.png)
-- **Raw Log File:** [📄 View dnsrecon_output.txt](outputs/dnsrecon_output.txt)
+  ![Task 6 - dnsrecon](screenshots/dnsrecon.png)
+- **Raw Log File:** [📄 View dnsrecon.txt](outputs/dnsrecon.txt)
 ---
 
 ## 📡 5. Phase 2: Network Scanning with Zenmap (W2-PM5)
@@ -160,7 +160,7 @@ Using the Windows Command Prompt (`ipconfig`), I extracted the network parameter
 - **Command Executed:** `nmap -sn 192.168.56.0/24`
 - **Observation:** Scanned 256 IP addresses in 13.71 seconds. Confirmed active host `192.168.56.1` is up and responsive.
 - **Evidence:**
-  ![Nmap Raw Output](screenshots/zenmap_nmap_output.png)
+  ![Nmap Raw Output](screenshots/nmap.png)
 
 ---
 
@@ -176,7 +176,7 @@ Using the Windows Command Prompt (`ipconfig`), I extracted the network parameter
 
 - **Security Impact:** Open ports represent potential ingress points into the network. Listening services must be audited to ensure outdated versions or default credentials are not present.
 - **Evidence:**
-  ![Zenmap Ports and Hosts](screenshots/zenmap_ports.png)
+  ![Zenmap Ports and Hosts](screenshots/ports.png)
 
 ---
 
@@ -187,7 +187,7 @@ The **Host Details** panel aggregates system diagnostics collected during scanni
 - **Ports Scanned:** Filtered/Open status breakdown
 - **OS Detection / Latency:** Recorded round-trip latency (< 0.001s)
 - **Evidence:**
-  ![Zenmap Host Details](screenshots/zenmap_host_details.png)
+  ![Zenmap Host Details](screenshots/host.png)
 
 ---
 
@@ -197,7 +197,7 @@ Zenmap's topology engine renders a radial diagram mapping nodes relative to the 
 - **Legend & Export:** Enabled the Zenmap Legend window and exported the graphic in PDF format.
 - **Exported File:** [`screenshots/topography.pdf`](screenshots/topography.pdf)
 - **Evidence:**
-  ![Zenmap Topology Map](screenshots/zenmap_topology.png)
+  ![Zenmap Topology Map](screenshots/topology.png)
 
 ---
 
@@ -241,23 +241,23 @@ The **Scans** tab maintains a persistent audit log of all scans run during the s
 ├── W2-PM-FINAL_Pentesting_Report_Nate_Mthembo.pdf     # Downloadable PDF report
 │
 ├── outputs/                                           # 6 text files
-│   ├── whois_output.txt
-│   ├── whatweb_output.txt
-│   ├── nslookup_output.txt
-│   ├── curl_output.txt
-│   ├── wafw00f_output.txt
-│   └── dnsrecon_output.txt
+│   ├── whois.txt
+│   ├── whatweb.txt
+│   ├── nslookup.txt
+│   ├── curl-l.txt
+│   ├── wafw00f.txt
+│   └── dnsrecon.txt
 │
 └── screenshots/                                       # screenshots & topology PDF
-    ├── task1_whois.png
-    ├── task2_whatweb.png
-    ├── task3_nslookup.png
-    ├── task4_curl.png
-    ├── task5_wafw00f.png
-    ├── task6_dnsrecon.png
-    ├── zenmap_host_discovery.png
-    ├── zenmap_ports.png
-    ├── zenmap_topology.png
+    ├── whois.png
+    ├── whatweb.png
+    ├── nslookup.png
+    ├── curl.png
+    ├── wafw00f.png
+    ├── dnsrecon.png
+    ├── host.png
+    ├── ports.png
+    ├── topology.png
     └── topography.pdf
 
 ---
