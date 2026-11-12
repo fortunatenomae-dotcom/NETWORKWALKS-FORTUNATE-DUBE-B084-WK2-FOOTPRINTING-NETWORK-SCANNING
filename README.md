@@ -61,8 +61,8 @@ This project represents the practical milestone for **Week 2** of the Networkwal
   - **Name Servers:** `NS6135.HOSTGATOR.COM`, `NS6136.HOSTGATOR.COM` (reveals HostGator as primary hosting infrastructure)
 - **Security Context:** Attackers utilize nameserver information to map the hosting provider and target support desks or cloud accounts through social engineering.
 - **Evidence:**
-  ![Task 1 - whois](screenshots/task1_whois.png)
- - **Raw Log File:** [📄 View whois_output.txt](outputs/whois_output.txt)
+  ![Task 1 - whois](screenshots/whois.png)
+ - **Raw Log File:** [📄 View whois.txt](outputs/whois.txt)
 - 
    
 
@@ -80,8 +80,8 @@ This project represents the practical milestone for **Week 2** of the Networkwal
   - **Information Leaks:** Disclosed public administrator/support email address
 - **Security Context:** Disclosed software versions allow an attacker to cross-reference the National Vulnerability Database (NVD) / CVE archives for unpatched vulnerabilities.
 - **Evidence:**
-  ![Task 2 - whatweb](screenshots/task2_whatweb.png)
-- **Raw Log File:** [📄 View whatweb_output.txt](outputs/whatweb_output.txt)
+  ![Task 2 - whatweb](screenshots/whatweb.png)
+- **Raw Log File:** [📄 View whatweb](whatweb.txt)
 
 
 ---
