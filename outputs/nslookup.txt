@@ -1,0 +1,8 @@
+┌──(kali㉿kali)-[~/Documents/W2-Project/PM1]
+└─$ nslookup networkwalks.com | tee nslookup_output.txt
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+Name:   networkwalks.com
+Address: 192.232.216.135
